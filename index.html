@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<title>Warze.org - Homepage</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<link rel='stylesheet' type='text/css' href='/css/main.css'>
+		<link rel='stylesheet' type='text/css' href='/css/earth.css'>
+		<link rel='stylesheet' type='text/css' href='/css/nav.css'>
+		<link rel='stylesheet' type='text/css' href='/css/wartos.css'>
+		<link rel='stylesheet' type='text/css' href='/css/socials.css'>
+		<link rel='stylesheet' type='text/css' href='/css/aboutme.css'>
+		<link rel='stylesheet' type='text/css' href='/css/post.css'>
+
+		<meta name="title" content="Warze.org - Homepage">
+		<meta name="description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
+		<meta name="keywords" content="wartos, warze, leonhard tissen, homepage, leonhard, tissen, youtube, warzeegg, warzeorg, warzedev">
+		<meta name="robots" content="index, follow">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="language" content="English">
+		<meta name="revisit-after" content="1 days">
+		<meta name="author" content="Leonhard Tissen">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://home.warze.org">
+		<meta property="og:title" content="Warze.org - Homepage">
+		<meta property="og:description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
+		<meta property="og:image" content="https://home.warze.org/meta.png">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@leonhard_tissen">
+		<meta name="twitter:creator" content="@leonhard_tissen">
+		<meta name="twitter:url" content="https://home.warze.org/">
+		<meta name="twitter:title" content="Warze.org - Homepage">
+		<meta name="twitter:description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
+		<meta name="twitter:image" content="https://home.warze.org/meta.png">
+		<meta name="theme-color" content="#FF38A5">
+	</head>
+
+	<body>
+		<!-- Navigation Bar -->
+		<div id="navBarDesktop">
+			<nav>
+				<button class="roundedButton category" data-category="wartos">
+					<svg width="22" height="22" viewBox="0 0 4 4" id="warzeOrgLogo">
+						<mask id="glasses">
+							<rect x="0" y="0" width="4" height="4" fill="white"></rect>
+							<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
+							<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
+						</mask>
+						<circle cx="2" cy="2" r="2" mask="url(#glasses)" fill="white"></circle>
+					</svg>
+					WartOS
+				</button>
+				<button class="roundedButton category selectedCategory" data-category="news">
+					News
+				</button>
+				<!-- <button class="roundedButton category" data-category="projects">
+					Projects
+				</button> -->
+				<button class="roundedButton category" data-category="aboutme">
+					About Me
+				</button>
+			</nav>
+			<div id="navUnderline"></div>
+		</div>
+		<div id="navBarMobile">
+			<button id="navBarLauncher">
+				<svg width="40" height="40" viewBox="0 0 16 16">
+					<path d="M 2,4 14,4 M 2,8 14,8 M 2,12 14,12 " stroke="white" stroke-width="2" stroke-linecap="round"></path>
+				</svg>
+			</button>
+			<div id="navBarDrawer" class="tuckedAway">
+				<button class="category" data-category="wartos">
+					WartOS
+				</button>
+				<button class="category selectedCategory" data-category="news">
+					News
+				</button>
+				<!-- <button class="category" data-category="projects">
+					Projects
+				</button> -->
+				<button class="category" data-category="aboutme">
+					About Me
+				</button>
+			</div>
+		</div>
+
+		<!-- Main Content -->
+		<main>
+			<h1 id="title">
+				<span id="titleText">News</span><div id="titleCursor"></div>
+			</h1>
+
+			<section id="news">
+				<div class="post">
+					<span class="timestamp">March 6, 2024</span>
+					
+					<h1>A fresh coat of paint</h1>
+					<p>Warze.org just got a new landing page, you're seeing it right now!</p>
+					<p>This is more mobile friendly and improves SEO while simultaneously being flashy.</p>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Feb 3, 2024</span>
+
+					<h1>My new Puzzle Game: Lights on! 2</h1>
+					<p>"Lights On! 2" is a sister project I've made in just 3 days. All you have to do is place light bulbs throughout the room and make sure all of it is illuminated.</p>
+					<p>Can you beat all 20 Levels? <a href="https://lightson2.warze.org">Give it a try!</a> The code is also available on <a href="https://github.com/LeonhardTissen/lightsOn2">GitHub</a>.</p>
+					
+					<iframe src="https://www.youtube.com/embed/CsbU1txftRc" title="My new Puzzle Game: Lights on! 2 - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Jan 27, 2024</span>
+
+					<h1>Talk with AI on discord!</h1>
+
+					<p>I created a discord bot that interfaces with the Ollama API, letting you host LLMs on your own PC.</p>
+					<p>We sometimes have fun with them in <a href="https://discord.warze.org/">my server</a>, but if you'd like to host it yourself, the code is on <a href="https://github.com/LeonhardTissen/discordOllama">GitHub</a>.</p>
+
+					<a href="https://github.com/LeonhardTissen/discordOllama">
+						<img src="/news/discordOllama.png" alt="Ollama">
+					</a>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Jan 24, 2024</span>
+
+					<h1>My new Platformer Game: Ball 2 Remake</h1>
+					<p>Ball 2 Remake is a pixel perfect recreation of a really old computer game from my childhood (Released ~2000).</p>
+					<p>Jump through 30 levels or create your own with the level editor!</p>
+					<p>Try out the game now by clicking <a href="https://ball2.warze.org">here</a> and the code is on <a href="https://github.com/LeonhardTissen/ball2Remake">GitHub</a>.</p>
+					
+					<iframe src="https://www.youtube.com/embed/72-gRQAK_SU" title="My new Platformer Game: Ball 2 Remake - Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Dec 3, 2023</span>
+
+					<h1>Showing off an animated 3D book in CSS and JS</h1>
+					<p>Here's a small project that I recorded myself creating. It's an animated book using beautiful CSS animations.</p>
+					<p>You can view the finished product <a href="https://cssbook.warze.org">here</a> and the code for it on <a href="https://github.com/LeonhardTissen/cssBook">GitHub</a>.</p>
+					
+					<iframe src="https://www.youtube.com/embed/jkKjVyNrjco" title="Animated Book in HTML, CSS and JavaScript" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Nov 22, 2023</span>
+
+					<h1>I rewrote WartOS in VueJS</h1>
+
+					<p>It now features a more streamlined design with more icons, a search system and rich animations.</p>
+					<p>Check it out <a href="https://wartos.warze.org">here</a> and the code on <a href="https://github.com/LeonhardTissen/wartOSVue">GitHub</a>.</p>
+
+					<iframe src="https://www.youtube.com/embed/7U8Z840xhYc" title="The WartOS Rewrite" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Nov 14, 2023</span>
+
+					<h1>My new Puzzle Game: Lights on!</h1>
+					<p>A remake of a popular puzzle game with more fleshed out puzzle design.</p>
+					<p>Can you solve all 14 levels? Turn all the lights on, it shouldn't be that hard... right?</p>
+					<p>With each click, adjacent lamps toggle and you have to fiddle around to find the right pattern.</p>
+
+					<p>The game is available <a href="https://lightson.warze.org">here</a> and the code is on <a href="https://github.com/LeonhardTissen/lightsOn">GitHub</a>.</p>
+
+					<iframe src="https://www.youtube.com/embed/KjQLdaKSoCA" title="My new Puzzle Game: Lights on! &amp; All levels Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Nov 6, 2023</span>
+
+					<h1>Practice Flags using my new game!</h1>
+					<p>FlagQuiz is a game where you have to guess the flag of a country. It's a fun way to learn flags and their countries across the world.</p>
+
+					<p>Play it <a href="https://flagquiz.warze.org/">here</a> and the code is on <a href="https://github.com/LeonhardTissen/flagQuiz">GitHub</a>.</p>
+				
+					<img src="/news/flagQuiz.png" alt="FlagQuiz">
+				</div>
+
+				<div class="post">
+					<span class="timestamp">Nov 4, 2023</span>
+					
+					<h1>Create a Discord status out of emojis!</h1>
+
+					<p>A VueJS rewrite of a similar project I made in 2021.</p>
+					<p>A widely used tool shared across the social media platform Discord to create pixel art out of emoji and use it in messages, statuses, about me or wherever else.</p>
+					<p>Try it out <a href="https://discordstatus.warze.org">here</a>, the code is on <a href="https://github.com/LeonhardTissen/discordEmojiStatus">GitHub</a>.</p>
+					
+					<a href="https://discordstatus.warze.org">
+						<img src="/news/discordstatus.png" alt="Discord Status">
+					</a>
+ 				</div>
+
+				<div class="post">
+					<span class="timestamp">Jun 15, 2023</span>
+
+					<h1>I enhanced JollyWorld customization!</h1>
+
+					<p>By developing a modding tool for <a href="https://jollyworld.app">JollyWorld</a>, I allowed players to easily create their own custom characters.</p>
+					<p>It also shows a wide variety of community-created mods that can be downloaded with just a click. Most of which have amassed 10,000+ downloads.</p>
+
+					<iframe src="https://www.youtube.com/embed/PoCfbDPtJig" title="I developed a Modding Tool for JollyWorld ⚒️" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</section>
+
+			<section id="projects" class="hidden" style="opacity: 0">
+
+			</section>
+
+			<section id="aboutme" class="hidden" style="opacity: 0">
+				<img src="/about/leo2_zoom_normal_500px-removebg-preview_small.png" alt="Leonhard Tissen">
+				<div class="text">
+					<p>Hi, I'm <b>Leonhard Tissen</b>, a <b>software developer</b> from Germany.</p>
+					<p>I have over 7 years of experience making <b>games</b>, <b>websites</b> and <b>tools</b> for the web.</p>
+					<p>I've worked on numerous projects to bring quality applications out there, most of which you can view right here, on this website.</p>
+					<p>I love making an impact on the web and love helping others to learn coding as it provides a great way to express creativity and solve everyday problems. My greatest passion is to create and share my knowledge with others.</p>
+					<p>
+						<a href="mailto:contact@warze.org">contact@warze.org</a>
+						•
+						<a href="https://leonhard.warze.org">Portfolio</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="wartos" class="hidden" style="opacity: 0">
+				<p>Browse all of my projects in an OS-like experience.</p>
+				<img src="https://wartos.warze.org/meta.png" meta="WartOS Screenshot" id="wartOSscr">
+				<a href="https://wartos.warze.org/" target="_blank">
+					<button class="roundedButton" id="wartosButton">
+						<svg width="22" height="22" viewBox="0 0 4 4" id="warzeOrgLogo">
+							<mask id="glasses2">
+								<rect x="0" y="0" width="4" height="4" fill="white"></rect>
+								<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
+								<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
+							</mask>
+							<circle cx="2" cy="2" r="2" mask="url(#glasses2)" fill="white"></circle>
+						</svg>
+						Launch WartOS
+					</button>
+				</a>
+			</section>
+		</main>
+
+		<!-- Social media -->
+		<aside>
+			<a href="https://discord.warze.org/" target="_blank">
+				<img src="/icons/discord.svg" alt="Discord">
+				<p>Join my Discord server</p>
+			</a>
+			<a href="https://linkedin.warze.org/" target="_blank">
+				<img src="/icons/linkedin.svg" alt="LinkedIn">
+				<p>Connect on LinkedIn</p>
+			</a>
+			<a href="https://github.warze.org/" target="_blank">
+				<img src="/icons/github.png" alt="GitHub">
+				<p>View my GitHub</p>
+			</a>
+			<a href="https://gitlab.warze.org/" target="_blank">
+				<img src="/icons/gitlab.svg" alt="GitLab">
+				<p>View my GitLab</p>
+			</a>
+			<a href="https://youtube.warze.org/" target="_blank">
+				<img src="/icons/youtubesmall.png" alt="YouTube">
+				<p>Subscribe on YouTube</p>
+			</a>
+			<a href="https://twitch.warze.org/" target="_blank">
+				<img src="/icons/twitch.png" alt="Twitch">
+				<p>Follow on Twitch</p>
+			</a>
+			<a href="https://twitter.warze.org/" target="_blank">
+				<img src="/icons/x.svg" alt="x">
+				<p>Follow on Twitter/X</p>
+			</a>
+			<a href="https://ko-fi.com/leonhardtissen" target="_blank">
+				<img src="/icons/kofi.svg" alt="Ko-fi">
+				<p>Support me on Ko-fi</p>
+			</a>
+		</aside>
+
+		<!-- Decoration -->
+		<canvas id='stars'></canvas>
+
+		<div id="earthContainer">
+			<video autoplay muted loop id='earth'>
+				<source src='/earth/earthcropsmall.mp4' type='video/mp4'>
+			</video>
+
+			<svg width="256" height="256" viewBox="0 0 4 4" id="earthSunglasses">
+				<path d="M 0 2 A 1 1, 0, 0, 0, 2 2 L 1 2 Z" fill="black"></path>
+				<path d="M 2 2 A 1 1, 0, 0, 0, 4 2 L 1 2 Z" fill="black"></path>
+			</svg>
+		</div>
+
+		<img src="/earth/bg2.jpg" id="background">
+
+		<script src='/js/stars.js'></script>
+		<script src='/js/title.js'></script>
+		<script src='/js/nav.js'></script>
+		<script src='/js/index.js'></script>
+	</body>
+</html>

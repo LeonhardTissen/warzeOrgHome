@@ -1,0 +1,68 @@
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 20px;
+}
+#navUnderline {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 4px;
+	background-color: white;
+	transition: width 0.3s ease-out, left 0.3s ease-out;
+	border-radius: 2px;
+	z-index: 2;
+}
+#navBarMobile {
+	display: none;
+}
+
+#navBarLauncher {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+	#navBarDesktop {
+		display: none;
+	}
+	#navBarMobile {
+		display: block;
+	}
+}
+
+
+#navBarDrawer {
+	backdrop-filter: blur(5px);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding-block: 20px;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.6);
+	transition: top 0.3s ease-out, opacity 0.3s ease-out;
+}
+#navBarDrawer button {
+	display: block;
+	font-size: 24px;
+	margin-block: 8px;
+	width: 100%;
+	cursor: pointer;
+	text-align: left;
+}
+#navBarDrawer button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+#navBarDrawer button::before {
+	content: '•';
+	margin-right: 8px;
+}
+#navBarDrawer.tuckedAway {
+	top: -100px;
+	opacity: 0;
+	pointer-events: none;
+}

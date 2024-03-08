@@ -1,0 +1,136 @@
+:root {
+	--highlight: #449eff;
+	--newspost: #ff38a5;
+	--aboutme: #449eff;
+}
+
+@font-face {
+	font-family: Geist, sans-serif;
+	src: url('/static/fonts/GeistVF.woff2') format("woff2");
+}
+* {
+	box-sizing: border-box;
+	font-family: Geist;
+	font-weight: 900;
+	color: white;
+}
+/* Chrome */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--highlight);
+	border-radius: 5px;
+}
+
+/* Firefox */
+* {
+	scrollbar-width: auto;
+	scrollbar-color: var(--highlight) #f1f1f1;
+	transition: filter 0.3s;
+	background-color: transparent;
+	border: none;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-size: cover;
+	background-color: black;
+}
+#background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: -1;
+	object-fit: cover;
+}
+
+#titleText {
+	text-transform: capitalize;
+}
+#titleCursor {
+	animation: blink 0.4s infinite;
+	display: none;
+	width: 4px;
+	height: 0.8em;
+	background-color: white;
+	margin-left: 5px;
+	transform: translateY(0.15em);
+}
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+main {
+	position: fixed;
+	top: 130px;
+	left: 320px;
+	width: calc(100% - 360px);
+	height: calc(100% - 130px);
+	overflow-y: auto;
+}
+@media screen and (max-width: 800px) {
+	main {
+		left: 60px;
+		width: calc(100% - 70px);
+		top: 80px;
+		height: calc(100vh - 80px);
+	}
+}
+
+section {
+	transition: opacity 0.15s;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+section.hidden {
+	display: none !important;
+	pointer-events: none;
+}
+
+
+.roundedButton {
+	border-radius: 25px;
+	height: 50px;
+	font-size: 22px;
+	background-color: rgba(0, 0, 0, 0.187);
+	backdrop-filter: blur(3px);
+	border: 2px solid rgba(119, 119, 119, 0.379);
+	padding: 10px 20px;
+	margin-inline: 6px;
+	cursor: pointer;
+	transition: border-color 0.3s, letter-spacing 0.5s, color 0.3s;
+}
+.roundedButton#selectedCategory {
+	letter-spacing: 1.2px;
+	color: var(--highlight);
+}
+.roundedButton #warzeOrgLogo {
+	height: 22px;
+	width: 22px;
+	margin-right: 2px;
+	transform: translateY(2px);
+}
+.roundedButton:hover {
+	border-color: rgba(255, 255, 255, 0.8);
+}

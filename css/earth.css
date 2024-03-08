@@ -1,0 +1,35 @@
+#earthContainer {
+	position: fixed;
+	top: calc(100vh - 306px);
+	left: 25px;
+	border-radius: 50%;
+	box-shadow: 0 0 6px 3px rgba(34, 140, 253, 0.5);
+	pointer-events: none;
+	animation: earth 5s ease-in-out infinite alternate;
+	width: 256px;
+	height: 256px;
+}
+#earth {
+	border-radius: 50%;
+}
+#earthSunglasses {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: opacity 0.15s;
+	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 1));
+}
+
+@keyframes earth {
+	0% {
+		transform: translate(15px, -12px);
+	}
+	100% {
+		transform: translate(-5px, 5px);
+	}
+}
+@media screen  and (max-width: 800px) {
+	#earthContainer {
+		display: none;
+	}
+}
