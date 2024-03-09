@@ -5,6 +5,7 @@ const earthSunglasses = document.getElementById('earthSunglasses');
 const underline = document.getElementById('navUnderline');
 
 let currentCategory = 'news';
+let lastCategorySelection = 0;
 
 function resize() {
 	cvs.width = window.innerWidth;
@@ -76,6 +77,9 @@ function moveUnderlineToElement() {
 // Make all categories clickable
 document.querySelectorAll('.category').forEach((category) => {
 	category.addEventListener('click', (e) => {
+		const now = performance.now();
+		if (now < lastCategorySelection + 300) return;
+		lastCategorySelection = now;
 
 		document.querySelectorAll('.selectedCategory').forEach((category) => {
 			category.classList.remove('selectedCategory');

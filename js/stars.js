@@ -89,6 +89,4 @@ function setBackground(category) {
 
 		previousBackground.style.opacity = 1;
 	}, 250);
-
-	console.log(previousBackground, newBackground);
 }
