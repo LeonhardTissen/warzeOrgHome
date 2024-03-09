@@ -107,3 +107,16 @@ if ('ontouchstart' in window) {
 		element.remove();
 	});
 }
+
+// Make thumbnails turn into youtube embeds on click
+document.querySelectorAll('.thumb').forEach((thumbnail) => {
+	thumbnail.addEventListener('click', (e) => {
+		console.log(e.target.dataset.video)
+		const iframe = document.createElement('iframe');
+		iframe.src = `https://www.youtube.com/embed/${e.target.dataset.video}`;
+		iframe.frameborder = '0';
+		iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+		iframe.allowFullscreen = true;
+		e.target.parentElement.replaceChild(iframe, e.target);
+	});
+});

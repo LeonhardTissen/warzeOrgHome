@@ -72,3 +72,6 @@ p {
 		top: 20px;
 	}
 }
+.thumb {
+	cursor: pointer
+}
