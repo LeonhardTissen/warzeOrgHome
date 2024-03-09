@@ -41,7 +41,7 @@
 		<!-- Navigation Bar -->
 		<div id="navBarDesktop">
 			<nav>
-				<button class="roundedButton category" data-category="wartos">
+				<button class="roundedButton category selectedCategory" data-category="wartos">
 					<svg width="22" height="22" viewBox="0 0 4 4" id="warzeOrgLogo">
 						<mask id="glasses">
 							<rect x="0" y="0" width="4" height="4" fill="white"></rect>
@@ -52,7 +52,7 @@
 					</svg>
 					WartOS
 				</button>
-				<button class="roundedButton category selectedCategory" data-category="news">
+				<button class="roundedButton category" data-category="news">
 					News
 				</button>
 				<button class="roundedButton category" data-category="games">
@@ -74,10 +74,10 @@
 				</svg>
 			</button>
 			<div id="navBarDrawer" class="tuckedAway">
-				<button class="category" data-category="wartos">
+				<button class="category selectedCategory" data-category="wartos">
 					WartOS
 				</button>
-				<button class="category selectedCategory" data-category="news">
+				<button class="category" data-category="news">
 					News
 				</button>
 				<button class="category" data-category="games">
@@ -98,7 +98,7 @@
 				<span id="titleText">News</span><div id="titleCursor"></div>
 			</h1>
 
-			<section id="news">
+			<section id="news" class="hidden" style="opacity: 0">
 				<div class="post">
 					<span class="timestamp">March 6, 2024</span>
 					
@@ -298,7 +298,7 @@
 				</div>
 			</section>
 
-			<section id="wartos" class="hidden" style="opacity: 0">
+			<section id="wartos">
 				<p>Browse all of my projects in an OS-like experience.</p>
 				<img src="https://wartos.warze.org/meta.png" meta="WartOS Screenshot" id="wartOSscr">
 				<a href="https://wartos.warze.org/" target="_blank">
@@ -369,8 +369,8 @@
 
 		<img src="/earth/bgblue.jpg" class="background" id="bgblue">
 		<img src="/earth/bgpurple.jpg" class="background" id="bgpurple">
-		<img src="/earth/bgpink.jpg" class="background currentBackground" id="bgpink">
-		<img src="/earth/bgred.jpg" class="background" id="bgred">
+		<img src="/earth/bgpink.jpg" class="background" id="bgpink">
+		<img src="/earth/bgred.jpg" class="background currentBackground" id="bgred">
 		<img src="/earth/bggreen.jpg" class="background" id="bggreen">
 
 		<script src='/js/categories.js'></script>

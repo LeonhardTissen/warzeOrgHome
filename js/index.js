@@ -4,7 +4,7 @@ const earthSunglasses = document.getElementById('earthSunglasses');
 
 const underline = document.getElementById('navUnderline');
 
-let currentCategory = 'news';
+let currentCategory = 'wartos';
 let lastCategorySelection = 0;
 
 function resize() {
@@ -98,7 +98,7 @@ document.querySelectorAll('.category').forEach((category) => {
 });
 
 // Initial category
-selectCategory('news');
+selectCategory(currentCategory);
 moveUnderlineToElement(document.getElementById('selectedCategory'));
 
 // Hide PC only games if on mobile
@@ -106,6 +106,7 @@ if ('ontouchstart' in window) {
 	document.querySelectorAll('.pcOnly').forEach((element) => {
 		element.remove();
 	});
+	earth.remove();
 }
 
 // Make thumbnails turn into youtube embeds on click
