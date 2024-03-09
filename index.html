@@ -12,6 +12,7 @@
 		<link rel='stylesheet' type='text/css' href='/css/socials.css'>
 		<link rel='stylesheet' type='text/css' href='/css/aboutme.css'>
 		<link rel='stylesheet' type='text/css' href='/css/post.css'>
+		<link rel='stylesheet' type='text/css' href='/css/games.css'>
 
 		<meta name="title" content="Warze.org - Homepage">
 		<meta name="description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
@@ -54,9 +55,12 @@
 				<button class="roundedButton category selectedCategory" data-category="news">
 					News
 				</button>
-				<!-- <button class="roundedButton category" data-category="projects">
-					Projects
-				</button> -->
+				<button class="roundedButton category" data-category="games">
+					Games
+				</button>
+				<button class="roundedButton category" data-category="discordbots">
+					Discord Bots
+				</button>
 				<button class="roundedButton category" data-category="aboutme">
 					About Me
 				</button>
@@ -76,9 +80,12 @@
 				<button class="category selectedCategory" data-category="news">
 					News
 				</button>
-				<!-- <button class="category" data-category="projects">
-					Projects
-				</button> -->
+				<button class="category" data-category="games">
+					Games
+				</button>
+				<button class="category" data-category="discordbots">
+					Discord Bots
+				</button>
 				<button class="category" data-category="aboutme">
 					About Me
 				</button>
@@ -205,7 +212,74 @@
 				</div>
 			</section>
 
-			<section id="projects" class="hidden" style="opacity: 0">
+			<section id="games" class="hidden" style="opacity: 0">
+				<a href="https://pushy.warze.org">
+					<img src="/games/pushy.png" alt="Pushy">
+					<h1>Pushy</h1>
+				</a>
+				<a href="https://jollyworld.app">
+					<img src="/games/jollyworld.png" alt="JollyWorld">
+					<h1>JollyWorld</h1>
+				</a>
+				<a href="https://snake.warze.org" class="pcOnly">
+					<img src="/games/snake.png" alt="Snake">
+					<h1>Snake</h1>
+				</a>
+				<a href="https://ball2.warze.org">
+					<img src="/games/ball2.png" alt="Ball 2">
+					<h1>Ball 2</h1>
+				</a>
+				<a href="https://doomed.io">
+					<img src="/games/doomed.png" alt="Doomed">
+					<h1>Doomed</h1>
+				</a>
+				<a href="https://happywheels.warze.org" class="pcOnly">
+					<img src="/games/happywheels.jpg" alt="Happy Wheels">
+					<h1>Happy Wheels</h1>
+				</a>
+				<a href="https://poki.com/en/g/jelly-venture">
+					<img src="/games/jelly.png" alt="Jelly's Venture">
+					<h1>Jelly's Venture</h1>
+				</a>
+				<a href="https://lightson.warze.org">
+					<img src="/games/lightson.png" alt="Lights on!">
+					<h1>Lights on!</h1>
+				</a>
+				<a href="https://lightson2.warze.org">
+					<img src="/games/lightson2.png" alt="Lights on! 2">
+					<h1>Lights on! 2</h1>
+				</a>
+				<a href="https://warze.org/casino" class="pcOnly">
+					<img src="/games/casino.png" alt="Casino">
+					<h1>Casino</h1>
+				</a>
+				<a href="https://warze.org/casino1" class="pcOnly">
+					<img src="/games/casino1.png" alt="Casino 1">
+					<h1>Casino 1</h1>
+				</a>
+				<a href="https://warze.org/casino2">
+					<img src="/games/casino2.png" alt="Casino 2">
+					<h1>Casino 2</h1>
+				</a>
+				<a href="https://warze.org/casino3" class="pcOnly">
+					<img src="/games/casino3.png" alt="Casino 3">
+					<h1>Casino 3</h1>
+				</a>
+				<a href="https://laibart.warze.org/" class="pcOnly">
+					<img src="/games/laibart.png" alt="Laibart">
+					<h1>Laibart</h1>
+				</a>
+				<a href="https://flagquiz.warze.org/">
+					<img src="/games/flagquiz.png" alt="FlagQuiz">
+					<h1>Flag Quiz</h1>
+				</a>
+				<a href="https://reactidle.warze.org/">
+					<img src="/games/react.png" alt="React Idle">
+					<h1>React Idle</h1>
+				</a>
+			</section>
+
+			<section id="discordbots" class="hidden" style="opacity: 0">
 
 			</section>
 
@@ -293,8 +367,13 @@
 			</svg>
 		</div>
 
-		<img src="/earth/bg2.jpg" id="background">
+		<img src="/earth/bgblue.jpg" class="background" id="bgblue">
+		<img src="/earth/bgpurple.jpg" class="background" id="bgpurple">
+		<img src="/earth/bgpink.jpg" class="background currentBackground" id="bgpink">
+		<img src="/earth/bgred.jpg" class="background" id="bgred">
+		<img src="/earth/bggreen.jpg" class="background" id="bggreen">
 
+		<script src='/js/categories.js'></script>
 		<script src='/js/stars.js'></script>
 		<script src='/js/title.js'></script>
 		<script src='/js/nav.js'></script>

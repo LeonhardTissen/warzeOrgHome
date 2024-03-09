@@ -72,3 +72,23 @@ function draw() {
 
 draw();
 
+function setBackground(category) {
+	const { background } = categories[category];
+	const previousBackground = document.querySelector('.currentBackground');
+	const newBackground = document.getElementById(`bg${background}`);
+
+	newBackground.style.zIndex = -2;
+
+	previousBackground.style.opacity = 0;
+
+	setTimeout(() => {
+		newBackground.style.zIndex = '';
+
+		newBackground.classList.add('currentBackground');
+		previousBackground.classList.remove('currentBackground');
+
+		previousBackground.style.opacity = 1;
+	}, 250);
+
+	console.log(previousBackground, newBackground);
+}

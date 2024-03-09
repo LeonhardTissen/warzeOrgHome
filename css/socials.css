@@ -13,6 +13,7 @@ aside {
 }
 aside img {
 	width: 32px;
+	transition: transform 0.3s;
 }
 aside a {
 	position: relative;
@@ -32,6 +33,9 @@ aside p {
 aside img:hover + p {
 	opacity: 1;
 	transform: translateX(40px);
+}
+aside img:hover {
+	transform: scale(1.2);
 }
 @media screen and (max-width: 400px) {
 	aside {

@@ -1,0 +1,32 @@
+#games {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#games a {
+	border-radius: 16px;
+	height: 180px;
+	width: 180px;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(3px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-decoration: none;
+	margin: 6px;
+	gap: 6px;
+	transition: background-color 0.15s;
+}
+#games a:hover {
+	background-color: rgba(65, 65, 65, 0.7);
+}
+#games a img {
+	height: 100px;
+	width: 100px;
+	margin-inline: auto;
+	border-radius: 6px;
+}
+#games a h1 {
+	font-size: 28px;
+	text-align: center;
+}

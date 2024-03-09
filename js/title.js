@@ -1,13 +1,6 @@
 const title = document.getElementById('titleText');
 const titleCursor = document.getElementById('titleCursor');
 
-const titleNames = {
-	'news': 'News',
-	'wartos': 'WartOS',
-	'projects': 'Projects',
-	'aboutme': 'About Me'
-}
-
 let targetTitle = 'News';
 
 function setTitleAnimationState(state) {
@@ -20,7 +13,7 @@ let titleInterval;
 function setTitle(category) {
 	if (currentCategory === category) return;
 
-	targetTitle = titleNames[category];
+	targetTitle = categories[category].title;
 
 	setTitleAnimationState('deleting');
 

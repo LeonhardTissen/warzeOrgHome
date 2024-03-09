@@ -4,28 +4,7 @@ const earthSunglasses = document.getElementById('earthSunglasses');
 
 const underline = document.getElementById('navUnderline');
 
-const colorAffectedElements = [background, earth];
-
 let currentCategory = 'news';
-
-const categoryColors = {
-	wartos: {
-		hueShift: 140,
-		color: 'rgb(255, 20, 20)',
-	},
-	news: {
-		hueShift: 110,
-		color: '#FF38A5',
-	},
-	projects: {
-		hueShift: 80,
-		color: 'rgb(255, 20, 255)',
-	},
-	aboutme: {
-		hueShift: 0,
-		color: '#449eff',
-	}
-}
 
 function resize() {
 	cvs.width = window.innerWidth;
@@ -61,15 +40,14 @@ function hideCategory(category) {
 }
 
 function selectCategory(category) {
-	const { hueShift, color } = categoryColors[category];
-	colorAffectedElements.forEach((element) => {
-		element.style.filter = `hue-rotate(${hueShift}deg)`;
-	});
+	const { hueShift, color } = categories[category];
+	earth.style.filter = `hue-rotate(${hueShift}deg)`;
 	document.documentElement.style.setProperty('--highlight', color);
 	
 	if (category !== currentCategory) {
 		hideCategory(currentCategory);
 		showCategory(category);
+		setBackground(category);
 	}
 	setTitle(category);
 	currentCategory = category;
@@ -118,3 +96,10 @@ document.querySelectorAll('.category').forEach((category) => {
 // Initial category
 selectCategory('news');
 moveUnderlineToElement(document.getElementById('selectedCategory'));
+
+// Hide PC only games if on mobile
+if ('ontouchstart' in window) {
+	document.querySelectorAll('.pcOnly').forEach((element) => {
+		element.remove();
+	});
+}
