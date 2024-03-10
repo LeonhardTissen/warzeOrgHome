@@ -27,3 +27,10 @@
 	cursor: pointer;
 	margin: 4px;
 }
+#newsletterClose {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 8px;
+	cursor: pointer;
+}
