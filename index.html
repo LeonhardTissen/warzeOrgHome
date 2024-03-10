@@ -13,6 +13,7 @@
 		<link rel='stylesheet' type='text/css' href='/css/aboutme.css'>
 		<link rel='stylesheet' type='text/css' href='/css/post.css'>
 		<link rel='stylesheet' type='text/css' href='/css/games.css'>
+		<link rel='stylesheet' type='text/css' href='/css/newsletter.css'>
 
 		<meta name="title" content="Warze.org - Homepage">
 		<meta name="description" content="The homepage of Leonhard Tissen to showcase his development projects. Keep in touch with recent game releases, check out projects or contact Leonhard Tissen.">
@@ -99,6 +100,12 @@
 			</h1>
 
 			<section id="news" class="hidden" style="opacity: 0">
+				<div id="newsletter">
+					<h1>Subscribe to my newsletter</h1>
+					<p>Get notified about new projects, games and updates.</p>
+					<input type="email" id="newsletterEmail" placeholder="Enter your email">
+					<button id="newsletterSubscribe">Subscribe</button>
+				</div>
 				<div class="post">
 					<span class="timestamp">March 6, 2024</span>
 					
@@ -367,16 +374,19 @@
 			</svg>
 		</div>
 
+		<!-- Backgrounds -->
 		<img src="/earth/bgblue.jpg" class="background" id="bgblue">
 		<img src="/earth/bgpurple.jpg" class="background" id="bgpurple">
 		<img src="/earth/bgpink.jpg" class="background" id="bgpink">
 		<img src="/earth/bgred.jpg" class="background currentBackground" id="bgred">
 		<img src="/earth/bggreen.jpg" class="background" id="bggreen">
 
+		<!-- Scripts -->
 		<script src='/js/categories.js'></script>
 		<script src='/js/stars.js'></script>
 		<script src='/js/title.js'></script>
 		<script src='/js/nav.js'></script>
 		<script src='/js/index.js'></script>
+		<script src='/js/newsletter.js'></script>
 	</body>
 </html>
