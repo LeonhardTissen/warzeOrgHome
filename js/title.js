@@ -1,7 +1,7 @@
 const title = document.getElementById('titleText');
 const titleCursor = document.getElementById('titleCursor');
 
-let targetTitle = 'News';
+let targetTitle = 'WartOS';
 
 function setTitleAnimationState(state) {
 	titleAnimationState = state;
